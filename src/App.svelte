@@ -20,10 +20,10 @@
   import Exporter from './Widget/Exporter.svelte';
 
 	let items_arr = [
-		gridHelp.item({ x: 0, y: 0, w: 3, h: 4, id: "preview_container", title: null, description: null, resizable: false}),
-    gridHelp.item({ x: 2, y: 0, w: 2, h: 4, id: "configuration_container", title: "Configurazione", description: null, resizable: false}),
-    gridHelp.item({ x: 0, y: 4, w: 5, h: 2, id: "labels_container", title: "Labels", description: null, resizable: false}),
-    gridHelp.item({ x: 0, y: 6, w: 5, h: 3, id: "dataset_container", title: "Dataset", description: null, resizable: false}),
+		gridHelp.item({ x: 0, y: 0, w: 3, h: 4, id: "preview_container", title: null, description: null, resizable: false, static: true}),
+    gridHelp.item({ x: 2, y: 0, w: 2, h: 4, id: "configuration_container", title: "Configurazione", description: null, resizable: false, static: true}),
+    gridHelp.item({ x: 0, y: 4, w: 5, h: 2, id: "labels_container", title: "Labels", description: null, resizable: false, static: true}),
+    gridHelp.item({ x: 0, y: 6, w: 5, h: 3, id: "dataset_container", title: "Dataset", description: null, resizable: false, static: true}),
 	];
   let breakpoints = [
     [1000, 1, 3],
