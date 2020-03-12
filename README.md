@@ -7,3 +7,5 @@ Il sito web è stato costruito con l'ausilio di un framework di ultima generazio
 
 Altre info:
 1. [Chart.js](https://www.chartjs.org/)
+2. [Svelte-grid](https://svelte-grid.now.sh/)
+3. [Google Fonts](https://fonts.google.com/)
