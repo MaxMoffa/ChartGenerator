@@ -65,7 +65,7 @@
         });
       }
       if(row.length !== 0) result.data.push({
-        label: "Label #" + (dataset++),
+        label: "Riga #" + (dataset++),
         type: "line",
         backgroundColor: "",
         borderColor: "#000",
@@ -85,4 +85,4 @@
 <Button text="Carica un CSV" on:click={loadFile}/>
 <Button text="Esporta il grafico" disabled={isData} on:click={exportChart} backgroundColor="#512da8"/>
 <input id="file-input" type="file" accept=".csv" name="name" style="display: none;" />
-<p align="justify">*Il CSV deve essere strutturato usando una riga per ogni dato, in particolare la prima riga deve contenere gli elementi da visualizzare sull'asse delle ascisse</p>
+<p align="justify">*Il CSV deve essere strutturato usando una riga per ogni dato, in particolare la prima riga deve contenere gli elementi da visualizzare sull'asse delle ascisse <a href="./media/files/Esempio.csv" download>Esempio</a></p>

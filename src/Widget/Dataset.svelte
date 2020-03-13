@@ -21,9 +21,10 @@
 
 <main>
   {#if data.length > 0}
-    <select bind:value={id}>
+    <label for="row_selector">Nome</label>
+    <select id="row_selector" bind:value={id}>
       {#each data as element, i}
-        <option value={i}>Dataset #{i}</option>
+        <option value={i}>Riga #{i}</option>
       {/each}
     </select>
     <div>
@@ -50,11 +51,11 @@
     <label for="{id}_data_container">Valori</label>
     <div id="{id}_data_container" class="data_container">
       {#each data[id].data as element, i}
-        <input type="text" id="{id}:{i}" placeholder={"Data #" + i} on:change={handleChange} bind:value={element}>
+        <input type="text" id="{id}:{i}" placeholder={"Dato #" + i} on:change={handleChange} bind:value={element}>
       {/each}
     </div>
   {:else}
-    Ancora nulla...
+    Ancora nulla... 🥺
   {/if}
 </main>
 

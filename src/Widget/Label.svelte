@@ -17,11 +17,11 @@
   {#if labels.length > 0}
     <div class="labels_container">
       {#each labels as label, i}
-        <input type="text" id="{i}" name="title" placeholder={"Label #" + i} on:change={handleChange} bind:value={labels[i]}>
+        <input type="text" id="{i}" name="title" placeholder={"Colonna #" + i} on:change={handleChange} bind:value={labels[i]}>
       {/each}
     </div>
   {:else}
-    Ancora nulla...
+    Ancora nulla... 🥺
   {/if}
 </main>
 
