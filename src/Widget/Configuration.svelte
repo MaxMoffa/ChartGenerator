@@ -52,7 +52,7 @@
       data: [],
       labels: []
     }
-    data = data.split("\r\n");
+    data = data.split(/\r\n|\r|\n/);
     data.forEach((item, i) => {
       let row = [];
       if (i>0) {
